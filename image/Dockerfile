@@ -4,6 +4,8 @@ ENV CYPHT_DEST "/usr/local/share/cypht"
 
 WORKDIR "/var/www"
 
+RUN apk update
+
 RUN set -e \
     && apk add --no-cache \
        supervisor \
